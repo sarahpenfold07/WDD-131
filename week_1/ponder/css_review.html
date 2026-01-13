@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script>
-        let selectElem = document.getElementById('webdevlist');
-        selectElem.addEventListener('change', function(){
-            let codeValue = selectElem.value;
-            console.log(codeValue);
-        })        
-    </script>
     <style>
 
         body {
@@ -90,15 +82,20 @@
                 <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
             </ul>
         </div>
-        
         <label for="webdevlist">Choose One:</label>
         <select name="code" id="webdevlist">
             <option>Choose One:</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="js">JavaScript</option>
-        </select>                   
-            
+        </select>                         
     </div>
+    <script>
+        let selectElem = document.getElementById('webdevlist');
+        selectElem.addEventListener('change', function(){
+            let codeValue = selectElem.value;
+            console.log(codeValue);
+        })        
+    </script>
 </body>
 </html>
