@@ -81,7 +81,41 @@
                 <li>Adds interactivity and dynamic behavior.</li>
                 <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
             </ul>
-        </div>                         
+        </div>
+        <label for="webdevlist">Choose One:</label>
+        <select name="code" id="webdevlist">
+            <option>Choose One:</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+        </select>   
+        
     </div>
+    <script>
+        let selectElem = document.getElementById('webdevlist');
+        let headings = document.querySelectorAll('#topics h2')
+
+        selectElem.addEventListener('change', function(){
+            let codeValue = selectElem.value;
+            console.log(codeValue);
+            
+        headings.forEach(h2 => {
+            h2.style.color = "black";
+            h2.nextElementSibling.style.backgroundColor = "transparent";
+        });
+
+        headings.forEach(h2 => {
+            if (
+                (codeValue === "html" && h2.textContent.includes("HyperText")) ||
+                (codeValue === "css" && h2.textContent.includes("Cascading")) ||
+                (codeValue === "js" && h2.textContent.includes("JavaScript"))
+            ) {
+                h2.style.color = "#2978ae";
+                h2.nextElementSibling.style.backgroundColor = "#dbeafe";
+            }
+        });
+    });
+        
+    </script>
 </body>
 </html>
