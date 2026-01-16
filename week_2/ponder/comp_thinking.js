@@ -22,7 +22,7 @@ function changeTheme() {
         pageContent.style.fontFamily = "'Big Caslon', serif";
         boxSize.style.transform = 'scale(0, 0)'
     } else {
-        document.body.style.backgroundImage = "none";
+        document.body.style.backgroundImage = "url('https://sarahpenfold07.github.io/WDD-131/week_2/images/home_page.jpg')";
         pageContent.style.fontFamily = "Georgia, serif";
         boxSize.style.transform = 'scale(1, 1)'
     }

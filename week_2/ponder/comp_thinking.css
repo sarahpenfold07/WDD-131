@@ -1,6 +1,7 @@
 
 body {
     background-size: 100vw 100vh;
+    background-image: url('https://sarahpenfold07.github.io/WDD-131/week_2/images/home_page.jpg');
     margin: 0;
     padding: 20px;
     transition: background-image 1s ease;
