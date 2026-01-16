@@ -8,7 +8,7 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current === 'ocean') {
-        document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/ocean.jpg')";
+        document.body.style.backgroundImage = "url('https://static0.srcdn.com/wordpress/wp-content/uploads/2019/06/The-Shire.jpg')";
         pageContent.style.fontFamily = "Papyrus, fantasy";
         boxSize.style.transform = 'scale(0, 0)'
     } else if (current === 'forest') {
