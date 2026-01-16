@@ -7,8 +7,10 @@ selectElem.addEventListener('change', changeTheme);
 
 function changeTheme() {
     let current = selectElem.value;
-    if (current === 'ocean') {
-        document.body.style.backgroundImage = "url('https://github.com/sarahpenfold07/WDD-131/blob/main/week_2/images/Harry_Potter.jpg')";
+    if (current === 'shire') {
+        document.body.style.backgroundImage = "url('https://sarahpenfold07.github.io/WDD-131/week_2/images/Shire.avif')";
+        pageContent.style.color = "white"
+        pageContent.style.fontFamily = "'Big Caslon', serif";
         boxSize.style.transform = 'scale(0, 0)'
     } else if (current === 'forest') {
         document.body.style.backgroundImage = "url('https://wddbyui.github.io/wdd131/images/forest.jpg')";
