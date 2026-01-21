@@ -13,10 +13,20 @@ function changeTheme() {
         mish.style.color = "#fff"
         info.style.color = "#fff"
         logo.src = "../images/byui-logo-black.png"
+    } else if (current == 'light') {
+        doc.style.background = "#fff"
+        mish.style.color = "#000"
+        info.style.color = "#000"
+        logo.src = "../../week_1/mission/images/byui-logo-white.webp"
+    } else if (current == 'purple') {
+        doc.style.background = "#c0a1ed"
+        mish.style.color = "#000"
+        info.style.color = "#000"
+        logo.src = ".../.../week_1/mission.images/byui-logo-white.webp"
     } else {
         doc.style.background = "#fff"
         mish.style.color = "#000"
         info.style.color = "#000"
         logo.src = "../../week_1/mission/images/byui-logo-white.webp"
     }
-}        
+}
