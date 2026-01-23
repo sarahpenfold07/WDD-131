@@ -27,6 +27,11 @@ nav a {
     color: black;
     display: none;
 }
+
+nav.active a{
+    display: block;
+}
+
 nav a:hover {
     text-decoration: none;
     color: #616061;
@@ -43,7 +48,7 @@ nav a:hover {
     margin: 5px 0;
 }
 footer {
-    text-align: center;
+    text-align: left;
 }
 
 main {
@@ -58,6 +63,15 @@ main {
     }
     section{
         width: calc(50% - 40px - 2em - 2px);
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav a, 
+    nav.active a{
+        display: inline-block;
     }
 }
 
