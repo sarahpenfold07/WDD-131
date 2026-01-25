@@ -53,16 +53,16 @@ nav {
     text-align: center;
 }
 
-nav.active a{
-    display: block;
-}
-
 nav a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     padding: 20px;
     display: none;
+}
+
+nav.active a{
+    display: block;
 }
 
 h3{
@@ -101,8 +101,8 @@ footer {
         display: none;
     }
 
-    nav a{
-        display: inline;
-
+    nav a, 
+    nav.active a{
+        display: inline-block;
     }
 }
