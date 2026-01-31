@@ -4,7 +4,6 @@ let modal = document.querySelector('dialog');
 let modalImage = modal.querySelector('img');
 let closeButton = modal.querySelector('.close-viewer');
 
-// Event listener for opening the modal
 gallery.addEventListener('click', openModal);
 
 function openModal(e) {
@@ -17,10 +16,6 @@ function openModal(e) {
     modalImage.src = fullImage
 
     modal.showModal();
-    //console.log(e.target.src.replace('-sm', '-full'));
-
-
-// Code to show modal  - Use event parameter 'e' (event) 
     
 }
 
