@@ -10,19 +10,20 @@ let button = document.querySelector('.close-viewer')
 gallery.addEventListener('click', openModal)
 
 function openModal(e) {
-if (e.target.tagName != 'IMG') {
+    if (e.target.tagName != 'IMG') {
     return
-}
+    }
 
-let fullImage = e.target.src.replace (' ', 'full')
-    modal.src = fullImage
+    let fullImage = e.target.src.replace (' ', 'full')
 
-    modal.showModal();
-}
+        modal.src = fullImage
+
+        modal.showModal();
+    }
 
 button.addEventListener('click', () => {
-    modal.close()
-})
+    modal.close();
+});
 
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
