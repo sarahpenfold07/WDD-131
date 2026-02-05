@@ -78,8 +78,6 @@ footer {
     justify-content: center;
 }
 
-
-
 @media screen and (min-width: 700px) {
     main{
         grid-template-columns: 1fr 1fr;
