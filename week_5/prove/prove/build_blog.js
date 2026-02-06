@@ -5,7 +5,7 @@ function addStars(span) {
     span.setAttribute('aria-label', `${stars} out of 5 stars`);
 }
 
-let spans = document.querySelectorAll('atricle.movie p span')
+let spans = document.querySelectorAll('atricle.info p span')
 
 spans.forEach((span) => {
     let stars = span.innerText.length 
