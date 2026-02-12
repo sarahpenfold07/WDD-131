@@ -29,7 +29,7 @@ const studentUl = document.querySelector('#ul-2')
 let html = '';
 
 fruits.forEach((fruit) => {
-    html += `<li>${fruit}</li>`;
+    html += `<li>${fruit}</li>`; // += glues all of the fruits together 
 })
 
 fruitUl.innerHTML = html;
@@ -53,4 +53,9 @@ students.forEach((student) => {
 
 studentUl.innerHTML = studentHTML;
 
+fruits.forEach((fruits) => {
+    const li = document.createElement('li')
+    li.textContent = fruits;
+    fruitUl.appendChild(li);
+});
 
