@@ -69,10 +69,10 @@ articles.forEach((book) => {
     article.id = `book-${book.id}`;
     article.innerHTML = `
         <div class="book-meta">
-            <p><strong>Date:</strong> ${book.date}</p>
-            <p><strong>Ages:</strong> ${book.ages}</p>
-            <p><strong>Genre:</strong> ${book.genre}</p>
-            <p><strong>Rating:</strong> ${book.stars}</p>
+            <p>${book.date}</p>
+            <p>${book.ages}</p>
+            <p>${book.genre}</p>
+            <p>${book.stars}</p>
         </div>
         <div class="book-main">
             <h2>${book.title}</h2>
