@@ -1,0 +1,94 @@
+header {
+    padding: 17px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#nav {
+    text-align: right;
+}
+
+#nav li {
+    padding: 10px;
+    color: #B42D4A;
+    display: inline-block;
+}
+
+.line-1, .line-2, .line-3 {
+    border: none;
+    height: 3px;
+    width: auto;
+    margin: 1em 0;
+    background-color: #EEC89C;
+}
+
+.line-3 {
+    margin-top: 65px;
+}
+
+.date {
+    padding: 10px;
+    text-align: right;
+}
+
+.age {
+    padding: 10px;
+    text-align: right;
+}
+
+.genre {
+    padding: 10px;
+    text-align: right;
+}
+
+.rating {
+    padding: 10px;
+    text-align: right;
+}
+
+
+h1 {
+    color: #B42D4A;
+    text-align: left;
+}
+
+img {
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+.desc {
+    text-align: left;
+}
+
+#foot p {
+    text-align: center;
+}
+
+@media (min-width:1024px) {
+    .line-3 {
+        display: none;
+    }
+
+    .book {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        max-width: 900px;
+        margin: 0 auto 40px auto;
+    }
+
+
+    .book-main {
+        grid-column: 2/3;
+        border-left: 3px solid #EEC89C;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    .book-meta {
+        grid-column: 1/2;
+        text-align: right;
+        padding: 20px 20px 0 0;
+}
+}
