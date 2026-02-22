@@ -1,47 +1,34 @@
+// Wait for the DOM to fully load
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("checkoutForm");
+    const cardInput = document.getElementById("card");
+    const holderInput = document.getElementById("holder");
+    const monthInput = document.getElementById("month");
+    const yearInput = document.getElementById("year");
+    const cvcInput = document.getElementById("securityCode");
 
-    const theForm = document.querySelector('#checkoutForm');
-    const creditCardContainer = document.querySelector('#cardContainer');
-    const creditInput = document.querySelector('#cardContainer input');
+    form.addEventListener("submit", function(event) {
+        // Trim values to avoid spaces
+        const cardValue = cardInput.value.trim();
+        const holderValue = holderInput.value.trim();
+        const monthValue = monthInput.value.trim();
+        const yearValue = yearInput.value.trim();
+        const cvcValue = cvcInput.value.trim();
 
-//validations and errors
+        // Check if any field is empty
+        if (!cardValue || !holderValue || !monthValue || !yearValue || !cvcValue) {
+            alert("Please fill out all fields.");
+            event.preventDefault(); // Prevent form submission
+            return;
+        }
 
-function displayError(msg) {
-	// display error message
-	document.querySelector('.errors').textContent = msg
-}
+        // Check if card number matches the required number
+        if (cardValue !== "123412341234") {
+            alert("Card number must be 123412341234.");
+            event.preventDefault(); // Prevent form submission
+            return;
+        }
 
-function isCardNumberValid(number) {
-	// normally we would contact a credit card service...but we don't know how to do that yet. So to keep things simple we will only accept one number
-	return number === '1234123412341234'
-}
-
-function submitHandler(event) {
-	event.preventDefault();
-let errorMsg = '';
-	displayError('');
-}
-
-let cardNumber = document.querySelector('#creditCardNumber');
-const cardNum = cardNumber.value.trim();
-if (paymentSelect.value === 'creditCard') {
-    // Check if it's numeric and valid in one go
-    
-    if (!/^\d{16}$/.test(cardNum)) {
-    errorMsg += 'Card number must be 16 digits\n';
-    } else if (!isCardNumberValid(cardNum)) {
-        errorMsg += 'Card number is not valid\n';
-    }
-    
-    //check date
-    const expYear = Number(document.querySelector('#year').value);   
-    const expMonth = Number(document.querySelector('#month').value);
-    const currentDate = new Date()
-
-    if (2000 + expYear < currentDate.getFullYear() || (2000 + expYear === currentDate.getFullYear() && expMonth <= (currentDate.getMonth()))
-    ) {
-        errorMsg += 'Card is expired\n';
-    }
-}
-
-document.querySelector('#checkoutForm').addEventListener('submit', submitHandler)
-
+        // Optional: further validation can go here (like checking month/year/cvc format)
+    });
+});

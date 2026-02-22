@@ -21,22 +21,23 @@
             </div>
             <div id="cardNum">
                 <label for="cardNumber">CARD NUMBER</label>
-                <input type='text' id='card' name='cardNumber' placeholder="Enter the 16-digit number" aria-labelledby="cardNumber">
+                <input type='text' id='card' name='cardNumber' placeholder="Enter the 16-digit number" aria-labelledby="cardNumber" required>
             </div>
             <div id="cardHold">
                 <label for="cardHolder">CARD HOLDER</label>
-                <input type='text' id='holder' name='cardNumber' placeholder="Jane Doe" aria-labelledby="cardHolder">
+                <input type='text' id='holder' name='cardHold' placeholder="Jane Doe" aria-labelledby="cardHolder" required>
             </div>          
             <div id="cardExpiration">
                 <label for="expirationDate">EXPIRATION</label>
-                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
-                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate" required>
+                <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate" required>
             </div>
         </section>
         <section id="back">
+            <div id="blackLine"></div>
             <div id="cvc">
                 <label for="cvc">CVC/CV</label>
-                <input type='text' id='securityCode' name='securityCode' placeholder="xxx" aria-labelledby="cvc">
+                <input type='text' id='securityCode' name='securityCode' placeholder="xxx" aria-labelledby="cvc" required>
             </div>
         </section>
         <div>
