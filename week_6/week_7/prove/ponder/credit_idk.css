@@ -1,0 +1,58 @@
+main {
+    display: grid;
+    grid-template-columns: 0.6fr 2fr, 0.6fr;
+    grid-template-rows: 0.7fr 2fr 0.7fr 0.7fr;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#checkoutForm {
+    background-color: #D7CDCC;
+}
+
+#total {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: left;
+}
+
+#creditCard {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+#trwhite {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #fff;
+}
+
+#cardNum {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#cardHold {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#cardExpiration {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#cvc {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#securityCode {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
