@@ -1,0 +1,39 @@
+#form {
+    background-color: #f6d2a8;
+    padding: 10px;
+    height: auto;
+    width: fit-content;
+    border-radius: 30px;
+    border: solid 5px #ffcbe2;
+}
+
+#courseName {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#enrollStudent {
+    background-color: #ffcbe2;
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+#sectionNumber {
+    background-color: #ffcbe2;
+}
+
+th {
+    color: #fff;
+}
+
+#sections {
+    color: #fff;
+    text-align: center;
+}
+
+
+

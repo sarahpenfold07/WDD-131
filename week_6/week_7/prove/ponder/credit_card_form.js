@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Check if card number matches the required number
         if (cardValue !== "123412341234") {
-            alert("Card number must be 123412341234.");
+            alert("Card number is invalid.");
             event.preventDefault(); // Prevent form submission
             return;
         }
