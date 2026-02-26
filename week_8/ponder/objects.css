@@ -14,7 +14,7 @@
 }
 
 #enrollStudent {
-    background-color: #ffcbe2;
+    background-color: #c8e7e7;
     color: #fff;
 }
 
@@ -23,7 +23,7 @@ label {
 }
 
 #sectionNumber {
-    background-color: #ffcbe2;
+    background-color: #c8e7e7;
 }
 
 th {
@@ -34,6 +34,11 @@ th {
     color: #fff;
     text-align: center;
 }
+
+input {
+    color: #fff;
+}
+
 
 
 
