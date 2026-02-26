@@ -1,0 +1,38 @@
+section {
+    background-color: beige;
+    border-radius: 20px;
+    height: 600px;
+    width: 400px;
+}
+
+h1 {
+    background-color: #477962;
+    height: 30px;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img {
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+#info {
+    padding-left: 10px;
+    color: #000;
+}
+
+#attack {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #477962;
+}
+
+#level {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #477962;
+}
