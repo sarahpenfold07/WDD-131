@@ -1,0 +1,41 @@
+#search-bar {
+    margin: auto;
+    background-color: #cf867f;
+    padding: 10px;
+    width: fit-content;
+}
+
+#search {
+    background-color: #d2d0cd;
+    border: #cf867f;
+    color: #e1536a;
+}
+
+label {
+    color: #fff;
+}
+
+#hike-container {
+    margin: 20px auto;
+    background-color: #d2d0c3;
+    width: 500px;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #e1536a;
+}
+
+button {
+    background-color: #579c98;
+    color: #fff;
+    border: #cf867f;
+}
+
+.hike-content{
+    padding: 10px;
+}
+
+.hike-content p {
+    color: #cf867f;
+}
